@@ -6,6 +6,5 @@
   {modules, [@MODULES@]},
   {registered, [@REGISTERED@]},
   {applications, [kernel,stdlib]},
-  {env, []},
-  {mod, {erlusb_app,[]}}
+  {env, []}
  ]}.

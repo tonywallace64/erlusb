@@ -5,44 +5,18 @@ erlusb
 
 
 
+
 What is erlusb?
 ---------------
 
 erlusb might become an Erlang_ library with a general purpose interface
 to USB devices some time.
 
-As of 2009-01-21, erlusb is just a personal research project to see
-how to interface an USB_ device to an Erlang program, and how to do an
-Erlang/OTP application design implementing such an interface.
-
-The hope is that Erlang's binary pattern matching, message passing,
-and finite state machine support make writing device interfaces
-(communicating FSMs) easy, clean, and fun - as opposed to writing such
-interfaces in other languages.
+This is my fork of ndim's erlusb project.  I like his coding style which is why his code is the basis for this fork.  However the gen_server does not store any state so is unnecessary.  If the genserver is unnecessary then so is the supervisor, and the code simply becomes a library application.
 
 .. _Erlang: http://www.erlang.org/
 .. _USB:    http://www.usb.org/
 
-
-
-What is the plan?
------------------
-
-Reached Milestones:
-
-  0.5 Basic working OTP architecture
-
-Planned Milestones:
-
-  0.6 USB device list querying and tracking of device hotplugging
-
-  0.7 Communication with USB device (example: Garmin GPS 60)
-
-  0.8 Code generalized from Garmin access to general device access
-
-  0.9 Polishing
-
-  1.0 one dot zero!
 
 
 
